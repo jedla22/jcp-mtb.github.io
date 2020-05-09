@@ -1,0 +1,29 @@
+<section id="races-calendar">
+
+  <h1>Kalendář závodů <small>Šumavský pohár MTB 2020</small></h1>
+
+  <div class="row calendar">
+  {% for race in site.races %}
+  	<div class="col-sm-3 col-xs-6">
+      <a href="#race_{{ race.raceid }}" class="calendar-item scroll">
+  			<div>
+  				<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>&nbsp;{{ race.date-real }}
+  			</div>
+  			<div>
+  				{{ race.name }}
+  			</div>
+      </a>
+  	</div>
+  {% endfor %}
+  </div>
+
+  <!-- <blockquote>
+    <p>
+       <b>Kalendář Šumavského poháru MTB pro rok 2020 je tady</b>. Stejně jako v loňském roce obsahuje kalendář závodů pro rok 2020 šest závodů.
+      Kromě tradičních lokalit lokalit jako je Nová Pec, Prachatice, Zadov a opět i Vimperk se letos můžeme těšit na dvě nové loklaity, jednu v Německu - Bad Greisbach a jednu v Rakousku - Haibach.
+      Pravidla pro hodnocení seriálu zůstávají stejná jak v loňském roce, počítá se 5 nejlepších výsledků ze 6 závodů.
+    </p>
+  </blockquote> -->
+
+
+</section>

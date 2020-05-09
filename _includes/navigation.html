@@ -1,0 +1,32 @@
+<nav class="main-nav large" role='navigation'>
+  <div class='container'>
+
+    <div class='navbar-header'>
+      <button type='button' data-toggle='collapse' data-target='#menu'>
+        <span class='sr-only'>Toggle navigation</span>
+        <span class='icon-bar'></span>
+        <span class='icon-bar'></span>
+        <span class='icon-bar'></span>
+      </button>
+
+      {% if page.name == "index.html" %}
+        <a class='navbar-brand  active scroll' href='#'>{{ site.sitename }}</a>
+      {% else %}
+        <a class='navbar-brand active' href='{{ "/" | relative_url }}'>{{ site.sitename }}</a>
+      {% endif %}
+
+    </div>
+
+    <div id='menu'>
+      <ul>
+        <li {% if page.name == "propozice.html" %} class="active" {% endif %} >
+          <a href='{{ "propozice.html" | relative_url }}'>Propozice</a>
+        </li>
+        <li {% if page.name == "vysledky.html" %} class="active" {% endif %}>
+          <a href='{{ "vysledky.html" | relative_url }}'>Výsledky</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</nav>

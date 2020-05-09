@@ -1,0 +1,288 @@
+---
+layout: default
+heading: Šumavský pohár MTB - Výsledky
+description: Aktuální výslekdy Šumavského poháru MTB 2020 a archiv výsledků předešlých ročníků.
+---
+
+<div class="container results">
+
+	<div id="res-201=20" class="year-results">
+
+		<h1>Výsledky <small>Šumavského poháru MTB 2020</small></h1>
+		<!-- <h4 class="overall-results">
+			<a href="http://jcp-mtb.sportsoft.cz/2020/results.aspx">Průběžné výsledky Šumavského poháru MTB 2020</a>
+		</h4> -->
+
+		<ul>
+		{% for race in site.races %}
+			{% if race.results_link %}
+			<li><a href="{{ race.results_link }}">{{race.name}} - {{ race.date |  date: "%d.%m.%Y" }} </a></li>
+		  	{% endif %}
+		 {% endfor %}
+		</ul>
+
+	</div>
+
+	<hr>
+
+</div>
+
+<div class = "container">
+
+	<nav role='navigation' class="navbar navbar-default">
+	  <div class='container'>
+
+	    <div class='navbar-header'>
+
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#archiv-collapse" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+
+	      <a class='navbar-brand'>ARCHIV</a>
+	    </div>
+
+	    <div class="collapse navbar-collapse" id="archiv-collapse">
+	      <ul class="nav navbar-nav">
+			<li>
+  			  <a href="#res-2019" class="scroll">2019</a>
+  		    </li>
+			<li>
+			  <a href="#res-2018" class="scroll">2018</a>
+		    </li>
+	        <li>
+	          <a href="#res-2017" class="scroll">2017</a>
+	        </li>
+	        <li>
+	          <a href="#res-2016" class="scroll">2016</a>
+	        </li>
+	        <li>
+	          <a href="#res-2015" class="scroll">2015</a>
+	        </li>
+	        <li>
+	          <a href="#res-2014" class="scroll">2014</a>
+	        </li>
+	        <li>
+	          <a href="#res-2013" class="scroll">2013</a>
+	        </li>
+	        <li>
+	          <a href="#res-2012" class="scroll">2012</a>
+	        </li>
+	        <li>
+	          <a href="#res-2011" class="scroll">2011</a>
+	        </li>
+	        <li>
+	          <a href="#res-2010" class="scroll">2010</a>
+	        </li>
+	      </ul>
+	    </div>
+
+	  </div>
+	</nav>
+
+</div>
+
+<div class="container results">
+
+	<div id="res-2019" class="year-results">
+		<h3>Výsledky <small>Šumavského poháru MTB 2019</small></h3>
+		<h4 class="overall-results">
+			<a href="http://jcp-mtb.sportsoft.cz/2019/results.aspx">CELKOVÉ&nbsp;VÝSLEDKY ŠUMAVSKÉHO POHÁRU MTB 2019</a>
+		</h4>
+		<ul>
+			<li><a href="https://sportsoft.cz/OfficialResults/2019/20190415_jcp_vimperk.pdf?201904.15.08.04">Vimperk 14.4.2019</a></li>
+			<li><a href="http://rscwaldkirchen.de/wp-content/uploads/2019/05/Ergebnisse_2019.pdf">Waldkirchen 5.5.2018</a></li>
+			<li><a href="https://sportsoft.cz/OfficialResults/2019/20180519_jcp_novapec_V%C5%A0ECHNYKATEGORIE.pdf?201905.19.02.56">Nová Pev 19.5.2019</a></li>
+			<li><a href="https://sportsoft.cz/OfficialResults/2019/20190609_jcp_prachatice.pdf?201906.09.02.29">Prachatice 9.6.2019</a></li>
+			<li><a href="https://www.bayerwald-mtb-cup.de/wp-content/uploads/2019/07/2019-Erg-Grafenau-CC.pdf">Grafenau 7.7.2019</a></li>
+			<li><a href="https://sportsoft.cz/OfficialResults/2019/20190715_jcp_vysl_zadov.pdf?201907.13.07.34">Zadov 13.7.2019</a></li>
+		</ul>
+	</div>
+
+
+	<div id="res-2018" class="year-results">
+		<h3>Výsledky <small>Šumavského poháru MTB 2018</small></h3>
+		<h4 class="overall-results">
+			<a href="http://jcp-mtb.sportsoft.cz/2018/results.aspx">CELKOVÉ&nbsp;VÝSLEDKY ŠUMAVSKÉHO POHÁRU MTB 2018</a>
+		</h4>
+		<ul>
+			<li><a href="http://www.timebike.de/SPK-MTB/Ergebnisse/2018/Spk-CupWk-Ergebnisse2018.pdf">Waldkirchen 29.4.2018</a></li>
+			<li><a href="http://sportsoft.cz/de/race/results/2472?rid=2847">Nová Pec 13.5.2018</a></li>
+			<li><a href="http://sportsoft.cz/OfficialResults/2018/20180520_jcp_horni_plana_KAT.pdf?201805.20.03.13">Horní Planá 20.5.2018</a></li>
+			<li><a href="http://sportsoft.cz/OfficialResults/2018/20180610_sp_zadov_vse.pdf?201806.10.03.01">Zadov 10.6.2018</a></li>
+			<li><a href="http://sportsoft.cz/OfficialResults/2018/20180624_sp_talin_komplet.pdf?201806.24.02.58">Kukle - Tálín 24.6.2018</a></li>
+			<li><a href="http://www.timebike.de/SPK-MTB/Ergebnisse/2018/CC_Grafenau.pdf">Grafenau 1.7.2018</a></li>
+			<li><a href="https://sportsoft.cz/OfficialResults/2018/Report.pdf?201807.14.02.30">Prachatice 14.7.2018</a></li>
+		</ul>
+	</div>
+
+	<hr>
+
+	<div id="res-2017" class="year-results">
+		<h3>Výsledky <small>Šumavského poháru MTB 2017</small></h3>
+		<h4 class="overall-results">
+			<a href="http://jcp-mtb.sportsoft.cz/2017/results.aspx">CELKOVÉ&nbsp;VÝSLEDKY ŠUMAVSKÉHO POHÁRU MTB 2017</a>
+		</h4>
+		<ul>
+			<li><a href="https://sportsoft.cz/cs/zavod/overview/2149">Nová Pec 30.4.2017</a></li>
+			<li><a href="http://www.timebike.de/SPK-MTB/Ergebnisse/Erg_2017/Gesamtergebnis%20Waldkirchen.pdf">Waldkirchen 7.5.2017</a></li>
+			<li><a href="http://sportsoft.cz/OfficialResults/2017/20170528_sp_ckyne_vysl_KAT.pdf?201705.28.03.03">Čkyně 28.5.2017</a></li>
+			<li><a href="http://my6.raceresult.com/67892/RRPublish/pdf.php?name=2_Ergebnisse%7CErgebnisliste%20alle%20AK%20Runden&amp;contest=0&amp;lang=cs">Schwarzenberg 24.6.2017</a></li>
+			<li><a href="http://sportsoft.cz/OfficialResults/2017/20170625_jcp_horni%20plana_vysl_KAT.pdf?201706.25.02.55">Horní Planá 25.6.2017</a></li>
+			<li><a href="http://sportsoft.cz/OfficialResults/2017/20170715_sumpohar_zadov.pdf?201707.15.02.29">Zadov 15.7.2017</a></li>
+			<li><a href="http://sportsoft.cz/OfficialResults/2017/20170910_jcp_prachatice_vysl_kat.pdf?201709.10.02.05">Prachatice 10.9.2017</a></li>
+		</ul>
+	</div>
+
+	<hr>
+
+	<div id="res-2016" class="year-results">
+		<h3 >Výsledky <small>Šumavského poháru MTB 2016</small></h3>
+		<h4 class="overall-results">
+			<a href="http://jcp-mtb.sportsoft.cz/2016/results.aspx">CELKOVÉ VÝSLEDKY ŠUMAVSKÉHO POHÁRU MTB 2016</a>
+		</h4>
+
+		<ul>
+			<li><a href="http://jcp-mtb.cz/wp-content/uploads/2013/12/20160418_vysl_jcp_nova_pec_kat_vse.pdf">Nová Pec 17.4.2016</a></li>
+			<li><a href="http://www.timebike.de/SPK-MTB/Erg_2016/2016Ergebnisliste_Lauf2.pdf">Waldkirchen 24.4.2016</a></li>
+			<li><a href="http://jcp-mtb.cz/wp-content/uploads/2013/12/20160529_sumpohar_ckyne.pdf">Čkyně 29.5.2016</a></li>
+			<li><a href="http://jcp-mtb.cz/wp-content/uploads/2013/12/BM_2016_Bayerwald_Bike_Classic_Grafenau.pdf">Grafenau 5.6.2016</a></li>
+			<li><a href="http://sportsoft.cz/OfficialResults/2016/20160708_sumpohar_zadov_kompletvysledky.pdf?201607.09.03.14">Zadov 9.7.2016</a></li>
+			<li><a href="http://sportsoft.cz/OfficialResults/2016/20160911_jcp_prachatice.pdf?201609.11.05.59">Prachatice 11.9.2016</a></li>
+		</ul>
+	</div>
+
+	<hr>
+
+	<div id="res-2015" class="year-results">
+
+		<h3 >Výsledky <small>Šumavského poháru MTB 2015</small></h3>
+		<h4 class="overall-results">
+			<a href="http://jcp-mtb.sportsoft.cz/2015/results.aspx">CELKOVÉ VÝSLEDKY ŠUMAVSKÉHO POHÁRU MTB 2015</a>
+		</h4>
+
+		<ul>
+			<li><a href="http://www.timebike.de/SPK-MTB/Erg_2015/2015ergebnisliste_lauf1.pdf">Waldkirchen 26.4.2015</a></li>
+			<li><a href="http://sportsoft.cz/OfficialResults/2015/20150305_sumpohar_komplet.pdf?201505.03.03.24">Nová Pec 3.5.2015</a></li>
+			<li><a href="http://sportsoft.cz/cs/race/overview/1523">Čkyně 7.6.2015</a></li>
+			<li><a href="http://www.timebike.de/SPK-MTB/Erg_2015/Grafenau%202015%20CC.pdf">Grafenau 14.6.2015</a></li>
+			<li><a href="http://sportsoft.cz/OfficialResults/2015/20150704_sumpohar_all_events.pdf?201507.05.08.33">Zadov 4.7.2015</a></li>
+			<li><a href="http://jcp-mtb.cz/wp-content/uploads/2013/12/Lenora-2015-vysledky.pdf">Lenora 2.8.2015</a></li>
+			<li><a href="http://sportsoft.cz/OfficialResults/2015/vysl_20150906_SP_Vimperk.pdf?201509.06.06.39">Vimperk 6.9.2015</a></li>
+		</ul>
+	</div>
+
+	<hr>
+
+	<div id="res-2014" class="year-results">
+		<h3>Výsledky <small>Šumavského poháru MTB 2014</small></h3>
+		<h4 class="overall-results">
+			<a href="http://jcp-mtb.sportsoft.cz/2014/results.aspx">CELKOVÉ VÝSLEDKY ŠUMAVSKÉHO POHÁRU MTB 2014.</a>
+		</h4>
+		<ul>
+			<li><strong>Böbrach 3.5.2014</strong>
+				<ul>
+					<li><a href="http://www.timebike.de/SPK-MTB/Erg_2014/Technik_Boebrach%202014.pdf">dovednostní soutěže</a></li>
+					<li><a href="http://www.timebike.de/SPK-MTB/Erg_2014/Boebrach_2014.pdf">cross country</a></li>
+				</ul>
+			</li>
+			<li><a href="http://sportsoft.cz/OfficialResults/2014/20140511_sumpohar_komplet.pdf?201405.11.06.01">Nová Pec 11.5.2014</a></li>
+			<li><a href="http://sportsoft.cz/OfficialResults/2014/20140608_sp_ckyne_vse.pdf?201406.08.04.47">Čkyně 8.6.2014</a></li>
+			<li><a href="http://sportsoft.cz/OfficialResults/2014/20140621_sumpohar_schwarzenberg_komplet.pdf?201406.23.11.08">Schwarzenberg 21.6.2014</a></li>
+			<li><a href="http://sportsoft.cz/cs/zavod/overview/1159">Lenora 28.6.2014</a></li>
+			<li><a href="http://sportsoft.cz/cs/zavod/overview/1165">Zadov 12.7.2014</a></li>
+			<li><a href="http://www.timebike.de/SPK-MTB/Erg_2014/Erg_Deg_2014.pdf">Deggendorf 27.7.2014</a></li>
+			<li><a href="http://sportsoft.cz/cs/zavod/overview/1182">Jistebnice 31.8.2014</a></li>
+		</ul>
+	</div>
+
+	<hr>
+
+	<div id="res-2013" class="year-results">
+		<h3>Výsledky <small>Jihočesko-bavorského poháru MTB 2013</small></h3>
+		<h4 class="overall-results">
+			<a href="http://jcp-mtb.sportsoft.cz/2013/results.aspx">CELKOVÉ VÝSLEDKY JIHOČESKO-BAVORSKÉHO POHÁRU 2013</a>
+		</h4>
+
+		<ul>
+			<li><a href="http://www.zadov.cz/jcp/2013/01WAL20130428.pdf">Waldkirchen 27.4.2013</a></li>
+			<li class="no-result"><span style="color: #000000;"><strong>Vimperk 6.5.2013</strong></span>
+			<ul>
+				<li><a href="http://sportsoft.cz/OfficialResults/2013/sprint.pdf?201305.05.04.51">sprint</a></li>
+				<li><a href="http://sportsoft.cz/OfficialResults/2013/trial2013_vysledky.pdf?201305.05.04.52">dovednostní soutěže</a></li>
+				<li><a href="http://sportsoft.cz/OfficialResults/2013/vysl_20130505_JCP_Vimperk.pdf?201305.05.08.42">cross country</a></li>
+			</ul>
+			</li>
+			<li><a href="http://www.zadov.cz/jcp/2013/03NOP20130519.pdf">Nová Pec 27.4.2013</a></li>
+			<li><a href="http://sportsoft.cz/OfficialResults/2013/20130616_jcp_repice.pdf?201306.16.03.45">Řepice 19.5.2013</a></li>
+			<li><a href="http://www.zadov.cz/jcp/2013/05GRA20130630.pdf">Grafenau 30.6.2013</a></li>
+			<li><a href="http://sportsoft.cz/OfficialResults/2013/combined_document.pdf?201308.23.08.38">Novosedly 10.8.2013</a></li>
+			<li><a href="http://sportsoft.cz/cs/zavod/results/1020?rid=1264">Jistebnice 1.9.2031</a></li>
+		</ul>
+	</div>
+
+	<hr>
+
+	<div id="res-2012" class="year-results">
+		<h3>Výsledky <small>Jihočesko-bavorského poháru MTB 2012</small></h3>
+		<h4 class="overall-results">
+			<a href="http://jcp-mtb.sportsoft.cz/2012/results.aspx">CELKOVÉ VÝSLEDKY JIHOČESKO-BAVORSKÉHO POHÁRU 2012</a>
+		</h4>
+		<ul>
+			<li><a href="http://sportsoft.cz/OfficialResults/2012/20120506_jcbp_vimperk_vse.pdf?201205.06.06.00">Vimperk 6.5.2012</a></li>
+			<li><a href="http://sportsoft.cz/OfficialResults/2012/20120520_jcbp_nova_pec_vse.pdf?201205.20.04.29">Nová Pec 20.5.2012</a></li>
+			<li><a href="http://www.zadov.cz/jcp/2012/BOB2012vysl.pdf">Böbrach 9.6.2012</a></li>
+			<li><a href="http://sportsoft.cz/OfficialResults/2012/20120617_jcbp_repice_vse.pdf?201206.17.06.52">Řepice 17.6.2012</a></li>
+			<li><a href="http://sportsoft.cz/OfficialResults/2012/20120714_jcbp_vysovatka_vse.pdf?201207.14.05.52">Vyšovatka 14.7.2012</a></li>
+			<li><a href="http://www.jcp-mtb.cz/upload/file/DEG_2012.pdf">Deggendorf 29.7.2012</a></li>
+			<li><a href="http://sportsoft.cz/OfficialResults/2012/vysl_20120818_jcp_novosedly_kat.pdf?201208.20.12.43">Novosedly 18.8.2012</a></li>
+		</ul>
+	</div>
+
+	<hr>
+
+	<div id="res-2011" class="year-results">
+		<h3>Výsledky <small>Jihočesko-bavorského poháru MTB 2011</small></h3>
+		<h4 class="overall-results">
+			<a href="http://www.zadov.cz/jcp/JCP2011FIN.pdf">CELKOVÉ VÝSLEDKY JIHOČESKO-BAVORSKÉHO POHÁRU 2011</a>
+		</h4>
+		<ul>
+			<li><a href="http://www.jcp-mtb.cz/upload/file/RSC_Spk-Cup_Ergebnisliste_Lauf1-1.pdf">Waldkirchen 1.5.2011</a></li>
+			<li><a href="http://www.jcp-mtb.cz/upload/file/vysl_20110508_jcp_vimperk_komplet.pdf">Vimperk 8.5.2011</a></li>
+			<li><a href="http://www.zadov.cz/jcp/20110522_NOP.pdf">Nová Pec 22.5.2001</a></li>
+			<li><a href="http://www.zadov.cz/jcp/20110522_NOP.pdf">Lipno 26.6.2011</a></li>
+			<li><a href="http://www.zadov.cz/jcp/20110709_BUK.pdf">Buk 9.7.2011</a></li>
+			<li><a href="http://www.jcp-mtb.cz/upload/file/Erg_quer_Deg.pdf">Deggendorf 24.7.2011</a></li>
+			<li><a href="http://www.zadov.cz/jcp/20110806_REP.pdf">Řepice 6.8.2011</a></li>
+			<li><a href="http://www.zadov.cz/jcp/20110827_NOV.pdf">Novosedly 27.8.2011</a></li>
+		</ul>
+	</div>
+
+	<hr>
+
+	<div id="res-2010" class="year-results">
+		<h3>Výsledky <small>Jihočesko-bavorského poháru MTB 2010</small></h3>
+		<h4 class="overall-results">
+			<a href="http://www.zadov.cz/jcp/JCP2010_CELK.pdf">CELKOVÉ VÝSLEDKY JIHOČESKO-BAVORSKÉHO POHÁRU 2010</a>
+		</h4>
+
+		<ul>
+			<li><a href="http://www.zadov.cz/jcp/20100418_REP.pdf">Řepice 18.4.2010</a></li>
+			<li><a href="http://www.zadov.cz/jcp/20100502_NOP.pdf">Nová Pec 25.5.201</a></li>
+			<li><a href="http://www.zadov.cz/jcp/20100502_NOP.pdf">Kubova Huť 23.5.2010</a></li>
+			<li><a href="http://www.zadov.cz/jcp/20100606_TIT.pdf">Vimperk 29.5.2010</a></li>
+			<li><a href="http://www.zadov.cz/jcp/20100606_TIT.pdf">Tittling 6.6.2010</a></li>
+			<li><a href="http://www.zadov.cz/jcp/20100613_GRA.pdf">Grafenau 13.6.2010</a></li>
+			<li><a href="http://www.zadov.cz/jcp/20100704_ZAD.pdf">Zadov 4.7.2010</a></li>
+			<li><a href="http://www.zadov.cz/jcp/20100725_DEG.pdf">Deggendorf 25.7.201</a></li>
+			<li><a href="http://www.zadov.cz/jcp/20100814_NOV.pdf">Novosedly 14.8.2010</a></li>
+			<li><a href="http://www.zadov.cz/jcp/20100904_BUK.pdf">Buk 4.9.2010</a></li>
+		</ul>
+	</div>
+
+
+</div>
+
+{% include footer.html %}

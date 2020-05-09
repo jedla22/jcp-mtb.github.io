@@ -2,3 +2,10 @@ _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
+.sass-cache
+Gemfile
+Gemfile.lock
+how-to-mount-ftp
+one-page-wonder-jekyll-gh-pages
+vendor
+.bundle

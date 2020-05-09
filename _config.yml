@@ -1,0 +1,18 @@
+title: Šumavský pohár MTB
+description: Šumavský pohár MTB je tradiční regionální seriál MTB XC závodů pořádaný v Jihočeskéme kraji a Bavorksu. Je určen především maldým zaájemcům o cyklistiku, kteří si zde mohou vyzkoušet své cylistické dovednosti a závodní atmosféru.
+sitename: Šumavský pohár MTB
+sass:
+  sass_dir: /assets/_sass
+  style: :compressed
+collections:
+  - features
+  - races
+exclude:
+  - vendor
+  - Gemfile
+  - _races/*.zip
+  - one-page-wonder-jekyll-gh-pages.zip
+  - Gemfile.lock
+  - README.md
+  - LICENSE.txt
+  - CNAME

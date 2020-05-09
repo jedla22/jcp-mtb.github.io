@@ -1,0 +1,122 @@
+<main id="races">
+
+	<hr>
+
+  	{% for race in site.races %}
+
+ 	<section id='race_{{ race.raceid }}' class="race-item">
+      	<img class='{% cycle 'pull-right', 'pull-left' %}' src='{{ race.square_image_url | relative_url }}'>
+      	<div class="promo-img-wrapper" style="background-image:url({{ race.image_url | relative_url }})">
+      		<h2>{{ race.name }}</h2>
+      		<div class="date-info"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>&nbsp;{{ race.date-real }}</div>
+      	</div>
+      	<div class='lead'>
+	    	<table class="table ">
+		  		<tbody>
+		  			<tr>
+		  				<th>POŘADATEL</th>
+		  				<td>
+		  					{{ race.organizator_name }}
+		  					{% if race.organizator_url %}
+		  						<br>
+		  						<span class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp;<a href="{{ race.organizator_url}}">{{ race.organizator_url | remove : "http://"}}</a>
+		  					{% endif %}
+		  					{% if race.organizator_email %}
+		  						<br>
+		  						<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>&nbsp;{{ race.organizator_email}}
+		  					{% endif %}
+
+		  				</td>
+		  			</tr>
+		  			<tr>
+		  				<th class="vert-align-middle">MÍSTO</th>
+		  				<td>
+		  					<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> {{ race.place }}
+		  				</td>
+		  			</tr>
+		  			<tr>
+		  				<th class="vert-align-middle">TERMÍN</th>
+		  				<td> <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>&nbsp;{{ race.day}} <br />{{ race.date-real  }}</td>
+		  			</tr>
+		  			<tr>
+		  				<th class="vert-align-middle">ŘEDITEL</th>
+		  				<td>{{ race.race_director }}
+
+		  					{% if race.race_director_phone %}
+		  					 	<br>
+		  						<span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>&nbsp;{{ race.race_director_phone }}
+		  					{% endif %}
+		  					{% if race.race_director_email %}
+		  						<br>
+		  						<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>&nbsp;{{ race.race_director_email }}
+		  					{% endif %}
+		  				</td>
+		  			</tr>
+		  			{% if race.chief_commisaire %}
+		  			<tr>
+		  				<th class="vert-align-middle">ROZHODČÍ</th>
+		  				<td>
+		  					{{ race.chief_commisaire }}
+		  				</td>
+		  			</tr>
+		  			{% endif %}
+		  			<tr>
+		  				<th class="vert-align-middle">Propozice</th>
+		  				<td>
+		  					{% if race.propositions_url %}
+		  						<a href="{{ race.propositions_url }}" target="_blank">Oficiální propozice</a>
+		  					{% endif %}
+		  					{% if race.propositions_url and race.poster_url %}
+		  						<br />
+		  					{% endif %}
+		  					{% if race.poster_url %}
+		  						<a href="{{ race.poster_url | relative_url }}">Oficiální plakát</a>
+		  					{% endif %}
+		  				</td>
+		  			</tr>
+		  			<tr>
+		  				<th class="vert-align-middle">Přihlášky</th>
+		  				<td>
+		  					{% if race.registration_link %}
+		  						{% if race.sportsoft_timekeeping %}
+		  							<a href="{{ race.registration_link }}"><img src="http://sportsoft.cz/contentimages/downloads/buttons/sportsoft_buttonek_registrace_cz.png" alt="registrace" title="registrace"/></a>
+		  						{% else %}
+		  							<a href="{{ race.registration_link }}">Online registrace</a>
+		  						{% endif %}
+		  					{% endif %}
+		  				</td>
+		  			</tr>
+		  			{% if race.results_link %}
+			  			<tr>
+			  				<th class="vert-align-middle">Výsledky</th>
+			  				<td>
+			  						{% if race.sportsoft_timekeeping %}
+			  							<a href="{{ race.results_link }}"><img src="http://sportsoft.cz/contentimages/downloads/buttons/sportsoft_buttonek_vysledky_cz_sk.png" alt="výsledky" title="registrace"/></a>
+			  						{% else %}
+			  							<a href="{{ race.results_link }}">VÝSLEDKY</a>
+			  						{% endif %}
+			  				</td>
+			  			</tr>
+		  			{% endif %}
+		  			<tr>
+		  				<td colspan="2">
+			  				{% if race.sparkassen_cup %}
+			  				 		<small>Není-li v propozicích závodu uvedeno jinak, závodí se podle propozic platných pro partnerský seriál <a href="http://www.spk-mtb.de/">Sparkassen MTB Cup</a></small>
+			  				{% else %}
+		  				 		<small>Není-li v propozicích závodu uvedeno jinak, závodí se podle <a href="/propozice.html">propozic Šumavského pohár MTB 2020</a></small>
+		  				 	{% endif %}
+		  				 </td>
+		  			</tr>
+
+		  		</tbody>
+		  	</table>
+
+	    	{{ race.content }}
+
+	    </div>
+
+    </section>
+
+	{% endfor %}
+
+</main>

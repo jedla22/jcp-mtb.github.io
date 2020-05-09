@@ -1,0 +1,320 @@
+section#races-calendar {
+
+  h1 {
+      color: #09528c;
+  }
+
+  div.row > div {
+    height:145px;
+  }
+
+  .calendar-item {
+    padding: 50px 0px;
+    margin:2px -13px;
+    border:1px solid black;
+    text-align:center;
+    cursor: pointer;
+    display: block;
+    font-weight: bold;
+  }
+
+  .calendar-item:hover
+  {
+    background-color:#eee;
+    font-size: 18px;
+    padding: 45px 0px;
+    font-weight:bold;
+    text-decoration: none;
+  }
+
+  blockquote
+  {
+    margin-top: 20px;
+  }
+
+}
+
+#toTop {
+  display: none;
+  text-decoration: none;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  overflow: hidden;
+  width: 44px;
+  height:44px;
+  border: none;
+  text-indent: 100%;
+  background: url(./img/top-move.png) no-repeat right top;
+  z-index: 2000;
+}
+
+main {
+
+  hr {
+    margin: 50px 0;
+    clear: both;
+  }
+
+  section {
+    overflow: hidden;
+    padding-bottom: 60px;
+    margin-bottom: 60px;
+    border-bottom: 1px solid #eee;
+  }
+
+  section:last-child {
+    border-bottom: none;
+    margin-bottom:0px;
+    padding-bottom:0px;
+  }
+
+  #race_nova-pec
+  {
+      tr td
+      {
+          text-decoration: line-through;
+      }
+  }
+
+  .race-item > img {
+    @extend .img-circle;
+    @extend .img-responsive;
+
+    max-width:50%;
+    width: 500px;
+
+    &.pull-left { margin-right: 4%; }
+    &.pull-right {  margin-left: 4%;  }
+
+   }
+
+  .promo-img-wrapper
+  {
+    background-size:cover;
+    position: relative;
+    background-position: center;
+  }
+
+  .date-info {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    color: #ddd;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: rgba(100,100,100,0.81);
+  }
+
+  h2 {
+    font-size: 50px;
+    color: #09528c;
+    span { @extend .text-muted; }
+  }
+
+  .race-item table.table{
+    max-width:46%;
+  }
+
+  .race-item table.table tr > th:first-of-type
+  {
+    font-weight: bold;
+    text-transform: uppercase;
+    vertical-align: middle;
+  }
+
+  div.results .navbar {
+    border-radius: 0px;
+  }
+
+  @media(max-width:1200px) {
+    h2 { font-size: 35px; }
+  }
+
+  @media(min-width: 992px){
+    .promo-img-wrapper
+    {
+      background-image: none !important;
+    }
+
+    .date-info {
+      display: none;
+    }
+  }
+
+  @media(max-width:991px) {
+
+    section {
+      padding-bottom: 40px;
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 30px;
+      float:left;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: rgba(200,200,200,0.71);
+      margin-top: 0px
+    }
+
+    section.race-item > img {
+     display: none;
+    }
+
+    .race-item table.table{
+      max-width:100%;
+    }
+
+    .promo-img-wrapper {
+      height:180px;
+      padding:10px 20px;
+      margin-bottom: 5px;
+      border-radius:5px;
+    }
+  }
+
+  @media(max-width:768px) {
+
+    section {
+      padding-bottom: 35px;
+      margin-bottom: 35px;
+    }
+
+    h2 { font-size: 25px; }
+
+    .promo-img-wrapper { height:180px; }
+
+    .lead {
+      font-size: 12px;
+    }
+  }
+
+  @media(max-width:668px) {
+    section {
+      padding-bottom: 25px;
+      margin-bottom: 25px;
+    }
+
+    body nav.main-nav.large .navbar-brand
+    {
+      font-size: 22px;
+      font-weight: bold;
+      padding: 25px 15px;
+    }
+  }
+
+  @media(max-width:375px) {
+
+
+
+    section {
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+    }
+
+    img {
+      max-width: 100%;
+
+      &.pull-left {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+
+      &.pull-right {
+        margin-bottom: 10px;
+        margin-left: 0;
+      }
+    }
+
+    .date-info
+    {
+      display: none;
+    }
+  }
+}
+
+body nav.main-nav {
+    background-color: #09528c;
+    border-color: #09528c;
+}
+
+body nav.main-nav ul>.active>a:focus, body nav.main-nav ul>.active>a, body nav.main-nav ul>.active>a:hover
+{
+    background-color: #09528c;
+}
+
+body nav.main-nav .navbar-inverse ul>.active>a:focus
+{
+    background-color: #09528c;
+}
+
+
+@media(min-width:768px)
+{
+    nav.main-nav.large
+    {
+      min-height: 70px;
+    }
+
+    nav.main-nav.large ul>li>a
+    {
+      padding-top: 25px;
+      padding-bottom: 25px;
+      font-size: 20px;
+    }
+
+    nav.main-nav ul>li>a
+    {
+      -webkit-transition: all 0.4s ease;
+      transition: all 0.4s ease;
+    }
+
+    nav.main-nav.large .navbar-brand
+    {
+      font-size: 30px;
+      font-weight: bold;
+      padding: 25px 15px;
+    }
+}
+
+nav.main-nav .navbar-brand
+{
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+nav.main-nav{
+   -webkit-transition: all 0.4s ease;
+   transition: all 0.4s ease;
+}
+
+div.results {
+  ul {
+    padding: 0px;
+      list-style-type: none;
+    li {
+      margin-top: 3px;
+        margin-bottom: 3px;
+        a {
+        background: transparent url(./img/icon-pdf.png) no-repeat scroll top left;
+        padding-left: 24px;
+          padding-top: 4px;
+          padding-bottom: 4px;
+      }
+    }
+    ul {
+      margin-left: 30px;
+    }
+  }
+}
+
+// @media(max-width:668px) {
+//   body nav.main-nav.large .navbar-brand
+//   {
+//     font-size: 18px;
+//     font-weight: bold;
+//     padding: 25px 15px;
+//   }
+// }
